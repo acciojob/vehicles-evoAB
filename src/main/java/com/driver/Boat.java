@@ -1,6 +1,6 @@
 package com.driver;
 
-public interface Boat {
+public interface Boat extends WaterVehicle {
     String name="";
     int capacity=0;
 
