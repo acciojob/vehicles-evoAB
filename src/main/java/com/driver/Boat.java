@@ -1,13 +1,19 @@
 package com.driver;
 
-public interface Boat extends WaterVehicle {
+public class Boat implements WaterVehicle {
     String name="";
     int capacity=0;
 
-    default String getVehicleName(){
+    Boat(String name, int capacity){
+        this.name=name;
+        this.capacity=capacity;
+    }
+    @Override
+    public String getVehicleName(){
         return this.name;
     }
-    default int getVehicleCapacity(){
+    @Override
+    public int getVehicleCapacity(){
         return this.capacity;
     }
 }
