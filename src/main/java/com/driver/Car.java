@@ -18,6 +18,7 @@ public class Car extends Vehicle {
         this.isManual=isManual;
         this.type=type;
         this.seats=seats;
+        this.currentGear=1;
     }
 
     public void changeGear(int newGear){
@@ -85,4 +86,5 @@ public class Car extends Vehicle {
     public void setSeats(int seats) {
         this.seats = seats;
     }
+
 }
